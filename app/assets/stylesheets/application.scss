@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+body {
+  // background-image: url("142_refileDownloadImage.png");
+  background-color: lightslategrey;
+}
+
+.books_index {
+  table {
+    width: 210px;
+    height: 252px;
+    background-color: orange;
+    ul {
+      padding: 10px;
+    }
+  }
+}

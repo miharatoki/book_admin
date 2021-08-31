@@ -1,0 +1,37 @@
+<div class="books_index">
+  <div class="row mt-5">
+    <% @books.each do |book|%>
+    <div class="col-3 d-flex flex-column">
+      <table class="table table-borderless">
+        <tbody>
+          <tr>
+            <th>タイトル</th>
+            <td><div><%= book.name%></div></td>
+         </tr>
+          <tr>
+            <th>発売日</th>
+            <td><div><%= book.published_on%></div></td>
+         </tr>
+          <tr>
+            <th>価格</th>
+            <td><div><%= book.price%></div></td>
+         </tr>
+          <tr>
+            <th>著者</th>
+            <td>
+              <ul>
+                <% book.authors.each do |book_authors|%>
+                  <li><%= book_authors.name %></li>
+                <% end %>
+              </ul>
+          </td>
+         </tr>
+        </tbody>
+     </table>
+
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
